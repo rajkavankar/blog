@@ -25,3 +25,5 @@ isLoggedin("Login required", "login.php");
         <div class="card-title"></div>
       </div> -->
 </div>
+
+<?php include("./inc/footer.php"); ?>

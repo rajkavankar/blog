@@ -4,6 +4,9 @@ include("./inc/header.php");
 include("./inc/db.php");
 include("./inc/function.php");
 include("./inc/sessions.php");
+if (isset($_SESSION["username"])) {
+  redirect("dashboard.php");
+}
 
 if (isset($_POST["submit"])) {
   $username = htmlentities($_POST["username"]);

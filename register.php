@@ -4,6 +4,9 @@ $title = "Registration";
 include("./inc/header.php");
 include("./inc/function.php");
 include("./inc/sessions.php");
+if (isset($_SESSION["username"])) {
+  redirect("dashboard.php");
+}
 
 if (isset($_POST["submit"])) {
   $name = htmlentities($_POST["name"]);
